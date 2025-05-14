@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+
+.MovieBody{
+  background-image: url("./assets/images/BodyBg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.active {
+  background-color: #E13C52;
+  border-radius: 60px;
+}
+
+.modal {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.apple:hover {
+  box-shadow: 2px 2px 15px 1px white;
+}
+
+.googlePlay {
+  position: relative;
+  z-index: 1;
+}
+
+.googlePlay::before {
+  content: '';
+  position: absolute;
+  top: -4px;
+  left: -2px;
+  right: -2px;
+  bottom: -4px;
+  z-index: -1;
+  border-radius: 10px;
+  background:
+    linear-gradient(217deg, rgba(255, 0, 0, 0.8), rgba(255, 0, 0, 0) 70.71%),
+    linear-gradient(127deg, rgba(0, 255, 0, 0.8), rgba(0, 255, 0, 0) 70.71%),
+    linear-gradient(336deg, rgba(0, 0, 255, 0.8), rgba(0, 0, 255, 0) 70.71%);
+  filter: blur(15px);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.googlePlay:hover::before {
+  opacity: 1;
+}

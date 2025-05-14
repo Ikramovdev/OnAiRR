@@ -1,0 +1,44 @@
+/* Custom styles for Swiper */
+.swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    background: rgba(255, 255, 255, 0.5);
+    opacity: 1;
+  }
+  
+  .swiper-pagination-bullet-active {
+    background: #ffffff;
+    transform: scale(1.2);
+  }
+  
+  .swiper-button-prev,
+  .swiper-button-next {
+    color: white;
+    transition: all 0.3s ease;
+  }
+  
+  .swiper-button-prev:hover,
+  .swiper-button-next:hover {
+    transform: scale(1.1);
+    background: rgba(0, 0, 0, 0.7) !important;
+  }
+  
+  .swiper-button-prev:after,
+  .swiper-button-next:after {
+    font-size: 20px !important;
+    font-weight: bold;
+  }
+  
+  /* Coverflow effect enhancements */
+  .swiper-slide-active {
+    z-index: 10;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 640px) {
+    .swiper-button-prev,
+    .swiper-button-next {
+      display: none;
+    }
+  }
+  
