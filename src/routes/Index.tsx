@@ -1,4 +1,3 @@
-import React from 'react'
 import { Route, Routes } from 'react-router-dom'
 import { PATH } from '../hook/usePath'
 import Movies from '../pages/Movies'

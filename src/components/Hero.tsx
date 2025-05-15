@@ -1,4 +1,3 @@
-import React from 'react'
 import InceptionBG from "../assets/images/Inception.png"
 import MoviesBg from "../assets/images/MoviesBG.png"
 import Avatar from "../assets/images/Avatar.jpg"
