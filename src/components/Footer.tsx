@@ -1,19 +1,18 @@
-import React from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import SiteLogoFooter from "../assets/images/siteLogoFooter.svg"
 import { AppleIcon, UserIcon } from '../assets/Icon'
 import GooglePlayIcon from "../assets/images/GooglePlay.svg"
-import FacebookIcon from '@mui/icons-material/Facebook';
-import InstagramIcon from '@mui/icons-material/Instagram';
+import FacebookIcon from '@mui/icons-material/Facebook'
+import InstagramIcon from '@mui/icons-material/Instagram'
 import TwitterIcon from '@mui/icons-material/Twitter';
 import YouTubeIcon from '@mui/icons-material/YouTube';
 import { Accordion, AccordionDetails, AccordionSummary, Typography } from '@mui/material'
 import AddIcon from '@mui/icons-material/Add';
 const Footer = () => {
-    const navigate = useNavigate() 
-        function handleScrollTop() {
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-        }
+    const navigate = useNavigate()
+    function handleScrollTop() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
     return (
         <footer className='bg-[#191919]'>
             <div className='hidden w-[1400px] mx-auto pt-15 pb-[32px] lg:flex justify-between'>
