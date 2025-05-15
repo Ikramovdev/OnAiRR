@@ -1,5 +1,5 @@
-import InceptionBG from "../assets/images/Inception.png"
-import MoviesBg from "../assets/images/MoviesBG.png"
+import InceptionBG from "../assets/images/Inception.jpg"
+import MoviesBg from "../assets/images/MoviesBG.jpg"
 import Avatar from "../assets/images/Avatar.jpg"
 import Interstellar from "../assets/images/Interstellar.jpg"
 import Matrix from "../assets/images/Matrix.jpg"
