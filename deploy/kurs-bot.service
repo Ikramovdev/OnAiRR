@@ -1,0 +1,23 @@
+[Unit]
+Description=Kurs sotuv Telegram boti (aiogram)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+# Bot joylashgan papka (VPS'dagi haqiqiy yo'lga moslang):
+WorkingDirectory=/opt/kurs-bot
+# venv ichidagi python bilan ishga tushiramiz:
+ExecStart=/opt/kurs-bot/venv/bin/python /opt/kurs-bot/bot.py
+
+# Xato/uzilishda avtomat qayta ishga tushirish:
+Restart=always
+RestartSec=5
+
+# Loglar journalctl'ga tushadi:
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=kurs-bot
+
+[Install]
+WantedBy=multi-user.target
