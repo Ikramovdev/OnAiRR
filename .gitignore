@@ -1,0 +1,27 @@
+# Maxfiy ma'lumotlar — HECH QACHON GitHub'ga tushmasin!
+.env
+
+# Ma'lumotlar bazasi
+bot.db
+
+# Virtual muhit
+venv/
+.venv/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# macOS
+.DS_Store
+
+# Muhit / IDE
+.claude/
+.venvs/
+
+# Zaxira nusxalar va loglar
+bot.db.backup-*
+bot.py.oldversion
+bot.py.backup-*
+*.log
